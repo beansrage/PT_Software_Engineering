@@ -23,8 +23,44 @@
 // )
 
 const kitchenSink = ['Dirty spoon', 'sponge', 'plate with gunk', 'soap', 'water'];
-for(let i =0; i < kitchenSink.length; i++){
-    console.log(i);
-    console.log('This is my kitchen sink ' + kitchenSink[i]);
-}
+// //for(let i =0; i < kitchenSink.length; i++){
+//     console.log(i);
+//     console.log('This is my kitchen sink ' + kitchenSink[i]);
+
+// }
+// for(let i =0; i < kitchenSink.length; i+=2){ // i+=2 itterates every other
+//     console.log(i);
+//     console.log('This is my kitchen sink ' + kitchenSink[i]);
+
+// }
+
+
+
+
+
+
+// const drSuess = ['cat in the hat', 'green eggs and ham', 'grinch', 'thing one', 'thing two', 'cindy loo who', 'jojo mcdodd'];
+// for(let i = 0; i < drSuess.length; i++) {
+//     const element = drSuess[i];
+//     console.log(element);
+// } else (let i=0; i < drSuess)
+
+
+
+
+
+// for (let i =0; i < element.length; i++) {
+//         if(i % 2 === 0) // this is the if statement/condi to check for an even number
+//         if(i % 2 !== 0){
+//             console.log(element[i]);
+//         }
+//     }
+
+
+
+
+const favMovies = ['Superbad for Bobs', 'movie', 'movie2', 'movie3'];
+  
+
+ 
 
