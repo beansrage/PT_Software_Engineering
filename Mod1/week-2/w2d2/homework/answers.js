@@ -63,17 +63,46 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 
 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 
 'Snatch', 'Fast and Furious'];
+        console.log(favMovies.indexOf('Titanic'));
+    favMovies.sort();
+        console.log(favMovies);
+    favMovies.pop();
+        console.log(favMovies);
+    favMovies.push('Guardians of the Galaxy');
+        console.log(favMovies);
+    favMovies.reverse();
+        console.log(favMovies);
+    // favMovies.shift();
+        
+    
+
 
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
-
-
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+            ["Lucinda", "Jacc", "Neff", "Snoop"],
+            ["Petunia", ["Baked Goods", "Waldo"]]];
+whereIsWaldo.splice(1, 1);
+    console.log(whereIsWaldo);
+whereIsWaldo[1][2] = 'No One'
+    console.log(whereIsWaldo);
+    console.log(whereIsWaldo[2][1][1]);
+                    console.log('');
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
-
+const kittyTalk = ['...human...why you taking pictures of me?...', 
+'...the catnip made me do it...', '...why does the red dot always get away...'];
+let randomValue = kittyTalk[Math.floor(Math.random() * (1 + 3 - 0 ))];    
+    let meow = 'Love me, pet me! HSSSSSS!';
+for (let i = 0; i<20 ; i++){
+    console.log(meow);
+    if (i % 2 );
+    console.log(randomValue);
+    ///Im still 100% on if this is what you are asking of me, but i am eagar to find out what you think. 
+}
 
 ////////////////////////////////
 //  Find the Median
