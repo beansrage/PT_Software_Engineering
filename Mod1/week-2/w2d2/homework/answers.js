@@ -9,7 +9,7 @@ for(let i = 0; i < 21; i++){
 ////////////////////////////////
 for (let i =0; i < 201; i+=2){
     console.log(i);
-}
+} 
 console.log('');
 
 ////////////////////////////////
@@ -72,8 +72,12 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
         console.log(favMovies);
     favMovies.reverse();
         console.log(favMovies);
-    // favMovies.shift();
-        
+    ///skipped shift function, cannot use shift to call specific element in array.
+    favMovies.splice(15,1,'Avatar');
+        console.log(favMovies);
+    favMovies.slice();
+        let cut = favMovies.slice(0,6)
+        console.log(cut);
     
 
 
