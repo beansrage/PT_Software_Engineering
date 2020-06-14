@@ -1,13 +1,23 @@
 h1 {
     font-family: cursive;
     text-align: center;
+    color: violet;
+}
+body {
+    background-color: dimgray;
 }
 
 
 
 
 
-
 h3{
-    color: crimson;
+    color: whitesmoke;
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+div {
+    text-align: center;
 }
