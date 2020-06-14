@@ -1,0 +1,17 @@
+h1 {
+    font-family: cursive;
+    text-align: center;
+}
+nav {
+    <a id="Facebook" href="#" >Facebook</a> <br>
+        <a id="LinkedIn" href="#" >LinkedIn</a> <br>
+        <a id="Twitter" href="#" >Twitter</a>
+}
+
+
+
+
+
+h3{
+    color: crimson;
+}
