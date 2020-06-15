@@ -36,4 +36,17 @@
         // { name: 'Sam', location: 'Earth', favMovies : ['kjngfsjf', 'fd']},
         // { name: 'Jon', location: 'Earth', favMovies : ['XXX', 'ttys']},
     // }
-    
+
+
+    ///////Take it easy////////
+    const rainBow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'] ; 
+        console.log(rainBow[4]);
+
+     Bob = {
+        favoriteFood: 'chinese',
+        hobby: 'fishing',
+        currentTown: 'Groveport',
+        faovriteDataType: 'OBJECTS!!!'
+        
+    }
+        console.log(Bob.hobby);
