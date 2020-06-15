@@ -93,3 +93,26 @@ console.log(crazyObject.larry.characters[1]);
 //5. 
 crazyObject.larry.quotes.push('I\'m trying to elevate small talk to medium talk')
 console.log(crazyObject.larry.quotes);
+
+
+
+////Object-ception/////
+const inception = {
+    reality: {
+        dreamLayer1: {
+            dreamLayer2: {
+                dreamLayer3: {
+                    dreamLayer4: {
+                        dreamLayer5: {
+                            dreamLayer6: {
+                                limbo: "Joseph Gordon Levitt"
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+ inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo['Joseph Gordon Levitt'] = null;
+ console.log(inception);
