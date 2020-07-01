@@ -26,3 +26,34 @@ function knit() {
 }
 knit();
 
+function cSelector() {
+    crayonBox={
+        colors: ['blue ', 'green ','white ', 'orange ']
+    }
+    console.log(crayonBox.colors[3]);
+}
+cSelector();
+
+function powerButton() {
+    
+    function options () {
+        console.log('select a song ');
+    }
+    return options()
+}
+
+powerButton();
+vM={
+    snacks: [Bar = {name: 'MarZ', price: 2.93},chips = {name: 'tortas', price: 1.30},drink = {name: 'SiiiP', price: 0.75}]
+}
+// a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
+function vend(a) {
+    for (let i =0; i < 3; i++) {
+        console.log(vM.snacks[i]);
+        
+ 
+
+}
+}
+vend();
+
