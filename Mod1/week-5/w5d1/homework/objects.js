@@ -1,22 +1,21 @@
 class Hamster {
-    constructor(name){
+    constructor(owner, name, price){
     this.owner = ''
     this.name = name
     this.price = 15
 }
-wheelRun() {
+wheelRun(Hamster) {
     console.log('squeak squeak');
 }
 eatFood() {
     console.log('nibble nibble');
 }
 getPrice() {
-    return price
+    return Hamster.price
     }
 }
-
 class Person {
-    constructor(name){
+    constructor(name, age, height, mood, hamsters,bankAccount ){
     this.name = name
     this.age = 0
     this.height = 0
@@ -38,37 +37,96 @@ greet() {
     console.log('Hello ' + Person.name + '. How are you?');
 }
 eat() {
-    for (let i = Person.weight; i <= 1; i++ ) {
-    }
-    for (let i = Person.mood; i <= 1; i++ ) {
-    }
+   this.weight ++; 
+   this.mood ++; 
 }
 exercise() {
-    for (let i = Person.weight; i <= 1; i-- ) {
-    }
+    this.weight --;
+}
+sayhi() {
+    console.log('Hello');
+    
 }
 ageUp() {
-    for (let i = Person.age; i <= 1; i++ ) {
-    }
-    for (let i = Person.height; i <= 1; i++ ) {
-    }
-    for (let i = Person.weight; i <= 1; i++ ) {
-    }
-    for (let i = Person.mood; i <= 1; i -= 10 ) {
-    }
-    for (let i = Person.bankAccount; i <= 1; i += 10 ) {
-    }
+    this.age ++;
+    this.height ++;
+    this.weight ++;
+    this.mood ++;
+    this.bankAccount +=10;
+}
+justAgeOdd() {
+    this.age += 5;
+}
+justAgeEven(){
+    this.age += 2;
 }
 buyHamster(hamster) {
-    Hamster.push(Person.hamsters);
-    for (let i = Person.mood; i <= 1; i += 10 ) {
-    } 
-    for (let i = Person.bankAccount; i <= 1; i -- ) {
-        getPrice(); {
-            return Person.bankAccount - price; 
-        }
-    }
+    this.hamsters.push(Gus)
+    this.mood ++;
+    this.bankAccount -=15; 
 }
+
 }
+const Gus = new Hamster('Gus')
+const Timmy = new Person('Timmy');
+Timmy.ageUp(); 
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+
+Timmy.justAgeOdd()
+Timmy.justAgeEven();
+Timmy.buyHamster(Gus)
+
+Timmy.ageUp(); 
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp(); 
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp(); 
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.eat();
+Timmy.eat();
+
+Timmy.exercise();
+Timmy.exercise();
+
+Gus.name = 'Gus'
+Gus.owner = 'Timmy'
+console.log(Timmy);
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
