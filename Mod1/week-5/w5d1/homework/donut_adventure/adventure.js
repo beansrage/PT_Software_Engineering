@@ -21,9 +21,26 @@ class Hero {
     }
 }
 
+class Enemy {
+    constructor(name, health, weapons, catchPhrases){
+    this.name = name
+    this.health = 100
+    this.weapons = {
+        pepperoniStars: 5,
+        cheeseGrease: 10 
+    }
+    this.catchPhrases = ['i\'m youtube famous',
+    'i\'m more dangerous than an uncovered sewer']
+    }
+    talkSmack() {
+        const random = this.catchPhrases[Math.floor(Math.random() * this.catchPhrases.length)];
+       console.log(random);
+     } 
+     fight() {
+         console.log('i\'m gonna flatten you like a slice of pepperoni!');
+     }
+}
 const dMan = new Hero('Dougie');
-dMan.talkSass();
-dMan.currenHP();
+const pRat = new Enemy('Pizza Rat');
 
-
-console.log();
+ 
