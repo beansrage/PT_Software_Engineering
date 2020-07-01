@@ -16,3 +16,13 @@ console.log(receipt[2].price);
 
 appartmentBuilding = ['hugh', 'beach', rooms = [1, 2, 3] ]
 console.log(appartmentBuilding[2][2]);
+
+function knit() {
+    neckWear={
+        item: 'scarf',
+        size: '6ft'
+    }
+    console.log(neckWear.item);
+}
+knit();
+
