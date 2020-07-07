@@ -28,10 +28,20 @@ $(() => {
     $h4.appendChild(tH4);
     $container.append($h4)
 /////////////H5
-    $h5 = document.createElement('H5');
-    let tH5 = document.createTextNode('Hawthorn Wand with Dragon Heartstring Core wand')
-    $h5.appendChild(tH5);
+    $h5 = document.createElement('H5')
+                ////Broken at year 5\\\
+    // let tH5 = document.createTextNode('Hawthorn Wand with Dragon Heartstring Core wand')
+    // $h5.appendChild(tH5);   
+    // $container.append($h5)
+
+    //////New wand!\\\\\\\\\\\
+    let tH5 = document.createTextNode('Holly Wand with Unicorn Hair Core')
+    $h5.style.color = '#4B0082'
+    $h5.appendChild(tH5);   
     $container.append($h5)
+    
+    
+    
 //////////////////////////////
 //////////////////////////////
 /////////Year 3///////////////
@@ -41,10 +51,11 @@ $(() => {
     att.value = 'trunk'; //Set
     $uL.setAttributeNode(att);
     $container.append($uL)
-
-    $li = document.createElement('li');
-    let lt = document.createTextNode('butter beer');
-    $uL.append(lt)
+    
+    //      'Removed" for year 5  \\
+    // $li = document.createElement('li');
+    // let lt = document.createTextNode('butter beer');
+    // $uL.append(lt)   
     
     
     $li2 = document.createElement('li');
@@ -78,7 +89,14 @@ $(() => {
  ///////////Year 4/////////
  //////////////////////////
 
- 
+ //In html, not sure if we were supposed to create dynamically or what
+
+
+ //////////////////////////
+ ///////////Year 4/////////
+ //////////////////////////
+document.removeChild(tH5);
+
 
 });
 
