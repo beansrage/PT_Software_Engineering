@@ -1,5 +1,14 @@
+
 body {
     background-color: rgb(19, 74, 94);
     text-align: center;
     font-family: fantasy;
+    
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+.secret {
+    opacity: 0.5;
 }
