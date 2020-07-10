@@ -48,15 +48,17 @@ const makeMiddleEarth = () => {
   // 3. use a for loop to iterate over the lands array that does the following:
         for (let i=0; i < lands.length; i++) {
           const element = lands[i]
-          console.log(element);
   //   3a. creates an article tag (there should be one for each land when the loop is done)
         const $artDiv = $('<article>')
   //   3b. gives each land article an `id` tag of the corresponding land name
-        $artDiv.addClass(lands[i]);
+        $($artDiv).attr('id', element)
   //   3c. includes an h1 with the name of the land inside each land article
-        const $h1 = $('<h1>').addClass(lands[i])
+        const $h1 = $('<h1>')
+        $artDiv.append($h1);
+        $h1.text(element);
+        
   //   3d. appends each land to the middle-earth section
-        $('body').append($artDiv)
+        $($meDiv).append($artDiv)
   }
 };
 
@@ -71,15 +73,16 @@ const makeHobbits = () => {
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
 
   // 1. create a 'ul'
-
+        const $ul = $('<ul>')
   // 2. make each hobbit an li element and append it to the 'ul' you just created
     // hint: use the given 'hobbits' array and use a for loop
-
+        for (let i=0; i<hobbits.length; i++) {
+          const $li = $('<li>')
   // 3. also, give each hobbit (`li`) a class of "hobbit"
 
   // 4. append the ul to the shire
     // hint: get 'The-Shire' by using its id
-
+        }
 };
 
 // COMMIT YOUR WORK
