@@ -1,4 +1,4 @@
-console.log("LINKED");
+// console.log("LINKED");
 
 // Dramatis Personae
 const hobbits = [
@@ -42,23 +42,22 @@ const makeMiddleEarth = () => {
   // console.log("Trying to make middle earth.");
 
   // 1. create a section tag with an id of middle-earth
-        const $meDiv = $("<section>").addClass("middle-earth");
+          const $meDiv = $("<section>").attr('id', 'middle-earth')
   // 2. append the section to the body of the DOM.
-        $("body").append($meDiv)
+          $("body").append($meDiv)
   // 3. use a for loop to iterate over the lands array that does the following:
-        for (let i=0; i < lands.length; i++) {
-          const element = lands[i]
-  //   3a. creates an article tag (there should be one for each land when the loop is done)
-        const $artDiv = $('<article>')
-  //   3b. gives each land article an `id` tag of the corresponding land name
-        $($artDiv).attr('id', element)
-  //   3c. includes an h1 with the name of the land inside each land article
-        const $h1 = $('<h1>')
-        $artDiv.append($h1);
-        $h1.text(element);
-        
-  //   3d. appends each land to the middle-earth section
-        $($meDiv).append($artDiv)
+          for (let i=0; i < lands.length; i++) {
+            const element = lands[i]
+  // // //   3a. creates an article tag (there should be one for each land when the loop is done)
+            const $aDiv = $('<article>')
+// // // //     3b. gives each land article an `id` tag of the corresponding land name
+            $($aDiv).attr('id', element)
+  // // //   3c. includes an h1 with the name of the land inside each land article
+            const $h1 = $('<h1>').attr('name', element)
+            $($aDiv).append($h1)
+            $h1.text(element);
+  // // //   3d. appends each land to the middle-earth section
+            $($meDiv).append($aDiv)
   }
 };
 
@@ -70,7 +69,7 @@ const makeMiddleEarth = () => {
 // ============
 const makeHobbits = () => {
 
-  // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
+// Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
 
   // 1. create a 'ul'
         const $ul = $('<ul>')
@@ -79,6 +78,7 @@ const makeHobbits = () => {
         for (let i=0; i<hobbits.length; i++) {
           const element = hobbits[i]
           const $li = $('<li>')
+          $li.text(element)
           $ul.append($li);
   // 3. also, give each hobbit (`li`) a class of "hobbit"
           $li.addClass('hobbit')
@@ -98,10 +98,13 @@ const makeHobbits = () => {
 const keepItSecretKeepItSafe = () => {
 
   // 1. create an empty div with an id of 'the-ring'
-
+      const $rDiv = $('<div>').attr('id', 'the-ring')
+      console.log($rDiv);
   // 2. add the ring as a child of Frodo
     // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
-
+      const $iH = document.getElementsByName('hobbit');
+      console.log($iH);
+      // ($iH).append('li')
     // when you think you have given Frodo the ring, check in your Elements tab to see that it works correctly
 
 };
