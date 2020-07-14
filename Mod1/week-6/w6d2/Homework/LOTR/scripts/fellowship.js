@@ -172,13 +172,10 @@ const leaveTheShire = () => {
     // let c = document.body.childNodes
       let cc = gh.childNodes[1] 
       $(gr).append(cc)
-    console.log(cc);
-   
-    
 };
 
 // COMMIT YOUR WORK
-// The commit message should read: "Chapter 6 complete - Left the Shire"
+// The commit message should read:  "Chapter 6 complete - Left the Shire"
 
 // ============
 // Chapter 7
@@ -187,7 +184,10 @@ const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
      // hint: You can get a list of elements by tag name, such as 'aside'
-
+    const bt = document.getElementsByTagName('aside')[0]
+    // const cc = bt.childNodes
+    bt.getElementsByTagName('li')[3].innerHTML = 'Aragorn'
+    console.log(bt)
 };
 
 // COMMIT YOUR WORK
