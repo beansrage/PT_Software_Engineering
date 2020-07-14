@@ -185,9 +185,7 @@ const beautifulStranger = () => {
   // 1. change the buddy 'Strider' textnode to "Aragorn"
      // hint: You can get a list of elements by tag name, such as 'aside'
     const bt = document.getElementsByTagName('aside')[0]
-    // const cc = bt.childNodes
     bt.getElementsByTagName('li')[3].innerHTML = 'Aragorn'
-    console.log(bt)
 };
 
 // COMMIT YOUR WORK
@@ -199,13 +197,20 @@ const beautifulStranger = () => {
 const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
-
+    const $nd = $('<div>').attr('id', 'the-fellowship')
   // 2. add an h1 with the text 'The Fellowship' to this new div
-
-  // 3. append the fellowship to middle-earth
-
+    const $h1 = $('<h1>')
+    $h1.text('The Fellowship')
+    $($nd).append($h1)
+  // 3. append the fellowship to middle-earth 
+    const $gm = document.getElementById('middle-earth')
+    $($gm).append($nd)
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
+    const gr = document.getElementById('Rivendell')
+    let cc = gr.childNodes[1]
+    $($nd).append(cc)
+    const as = document.getElementsByTagName('aside')[0]
+    $($nd).append(as)    
 };
 
 // COMMIT YOUR WORK
