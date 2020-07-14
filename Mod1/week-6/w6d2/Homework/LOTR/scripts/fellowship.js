@@ -140,7 +140,7 @@ const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
       const $at = $('<aside>')
-      const $gm = document.getElementById('Mordor')
+      const $gm = document.getElementById('middle-earth')
       $($gm).append($at)
   // 2. display an unordered list of buddies in the aside
       const $ul = $('<ul>')
@@ -148,8 +148,6 @@ const makeBuddies = () => {
           const ele = buddies[i]
           const $li = $('<li>')
             $li.text(ele)
-            // $ul.append($li)
-            // $at.append($ul)
   // 3. give each of the buddies a class of "buddy"
       $li.addClass('buddy')
   // 4. don't forget to append them to the aside
@@ -168,7 +166,15 @@ const makeBuddies = () => {
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
-
+      const gh = document.getElementById("The-Shire")
+      const gr = document.getElementById('Rivendell')
+      const gm = document.getElementById("Mordor")
+    // let c = document.body.childNodes
+      let cc = gh.childNodes[1] 
+      $(gr).append(cc)
+    console.log(cc);
+   
+    
 };
 
 // COMMIT YOUR WORK
