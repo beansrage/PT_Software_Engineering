@@ -116,17 +116,17 @@ const keepItSecretKeepItSafe = () => {
 const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
-  const $bu = $('<ul>')
-  for (let i=0; i<baddies.length; i++) {
-    const $bl = baddies[i]
-    const $li = $('<li>')
-          $li.text($bl)
-          $bu.append($li);
+    const $bU = $('<ul>')
+      for (let i=0; i<baddies.length; i++) {
+        const $bL = baddies[i]
+        const $lI = $('<li>')
+          $lI.text($bL)
+          $bU.append($lI);
   // 2. give each of the baddies a class of "baddy"
-    $li.addClass('baddy')
+    $lI.addClass('baddy')
   // 3. remember to append the ul to Mordor
-  const nd = document.getElementById('Mordor')
-    $(nd).append($bu)
+    const $nD = document.getElementById('Mordor')
+      $($nD).append($bU)
   }
 };
 
@@ -139,20 +139,20 @@ const makeBaddies = () => {
 const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
-      const $at = $('<aside>')
-      const $gm = document.getElementById('middle-earth')
-      $($gm).append($at)
+      const $aT = $('<aside>')
+      const $gM = document.getElementById('middle-earth')
+      $($gM).append($aT)
   // 2. display an unordered list of buddies in the aside
-      const $ul = $('<ul>')
+      const $uL = $('<ul>')
         for (let i=0; i<buddies.length; i++) {
           const ele = buddies[i]
-          const $li = $('<li>')
-            $li.text(ele)
+          const $lI = $('<li>')
+            $lI.text(ele)
   // 3. give each of the buddies a class of "buddy"
-      $li.addClass('buddy')
+      $lI.addClass('buddy')
   // 4. don't forget to append them to the aside
-            $ul.append($li)
-            $at.append($ul)
+            $uL.append($lI)
+            $aT.append($uL)
     }
 };
 
@@ -166,12 +166,11 @@ const makeBuddies = () => {
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
-      const gh = document.getElementById("The-Shire")
-      const gr = document.getElementById('Rivendell')
-      const gm = document.getElementById("Mordor")
-    // let c = document.body.childNodes
-      let cc = gh.childNodes[1] 
-      $(gr).append(cc)
+      const $gH = document.getElementById("The-Shire")
+      const $gR = document.getElementById('Rivendell')
+      const $gM = document.getElementById("Mordor")
+      let $cC = $gH.childNodes[1] 
+      $($gR).append($cC)
 };
 
 // COMMIT YOUR WORK
@@ -184,8 +183,8 @@ const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
      // hint: You can get a list of elements by tag name, such as 'aside'
-    const bt = document.getElementsByTagName('aside')[0]
-    bt.getElementsByTagName('li')[3].innerHTML = 'Aragorn'
+    const $bT = document.getElementsByTagName('aside')[0]
+    $bT.getElementsByTagName('li')[3].innerHTML = 'Aragorn'
 };
 
 // COMMIT YOUR WORK
@@ -197,20 +196,20 @@ const beautifulStranger = () => {
 const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
-    const $nd = $('<div>').attr('id', 'the-fellowship')
+    const $nD = $('<div>').attr('id', 'the-fellowship')
   // 2. add an h1 with the text 'The Fellowship' to this new div
     const $h1 = $('<h1>')
     $h1.text('The Fellowship')
-    $($nd).append($h1)
+    $($nD).append($h1)
   // 3. append the fellowship to middle-earth 
-    const $gm = document.getElementById('middle-earth')
-    $($gm).append($nd)
+    const $gM = document.getElementById('middle-earth')
+    $($gM).append($nD)
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-    const gr = document.getElementById('Rivendell')
-    let cc = gr.childNodes[1]
-    $($nd).append(cc)
-    const as = document.getElementsByTagName('aside')[0]
-    $($nd).append(as)    
+    const $gR = document.getElementById('Rivendell')
+    let $cC = $gR.childNodes[1]
+    $($nD).append($cC)
+    const $aS = document.getElementsByTagName('aside')[0]
+    $($nD).append($aS)    
 };
 
 // COMMIT YOUR WORK
@@ -222,13 +221,13 @@ const forgeTheFellowShip = () => {
 const theBalrog = () => {
 
   // 1. change the 'Gandalf' text to 'Gandalf the White'
-  const tw = document.getElementsByTagName('aside')[0]
-  tw.getElementsByTagName('li')[0].innerHTML = 'Gandalf the White'
+  const $tW = document.getElementsByTagName('aside')[0]
+  $tW.getElementsByTagName('li')[0].innerHTML = 'Gandalf the White'
   // 2. add a class "the-white" to this element
-    const c = document.getElementsByTagName('li')[8]
-    c.classList.remove('buddy')
-    c.classList.add('the-white')
-    console.log(c)
+    const $c = document.getElementsByTagName('li')[8]
+    $c.classList.remove('buddy')
+    $c.classList.add('the-white')
+    console.log($c)
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
         // .the-white {
         //   background-color: white;
@@ -249,11 +248,11 @@ const hornOfGondor = () => {
   // 1. create a pop-up alert that the horn of gondor has been blown
     alert("the horn of gondor has been blown!");
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-    const c = document.getElementsByTagName('li')[12]
-    c.style.setProperty("text-decoration", "line-through");
+    const $sT = document.getElementsByTagName('li')[12]
+    $sT.style.setProperty("text-decoration", "line-through");
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-  const x = document.getElementsByTagName('li')[2]
-  x.parentNode.removeChild(x);  
+  const $rU = document.getElementsByTagName('li')[2]
+  $rU.parentNode.removeChild($rU);  
 };
 
 // COMMIT YOUR WORK
@@ -306,10 +305,16 @@ const weWantsIt = () => {
 const thereAndBackAgain = () => {
 
   // 1. remove Gollum and the Ring from the DOM
-
+    const $rG = document.getElementById('gollum')
+    let elem = document.querySelector('#gollum');
+    elem.parentNode.removeChild(elem);
   // 2. remove all the baddies from the DOM
-
+    let $rB = document.getElementsByClassName('baddy')
+    $('.baddy').remove();  
   // 3. Move all the hobbits back to the shire
+    const $mH = document.getElementsByClassName('hobbit')
+    const $tS = document.getElementById('The-Shire')
+    $($tS).append($mH)
 
 };
 
