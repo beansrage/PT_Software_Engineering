@@ -104,7 +104,12 @@ ul {
   display: inline-block;
   margin: auto;
 }
-
+.the-white {
+  background-color: white;
+ border-width: 1px;
+ border-style: solid;
+ border-color: grey
+}
 
 /*aside {
   display: inline-block;
