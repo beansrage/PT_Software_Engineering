@@ -270,9 +270,9 @@ const itsDangerousToGoAlone = () => {
     const $gM = document.getElementById("Mordor")
     $($gM).append($mF, $mS)
   // 2. add a div with an id of 'mount-doom' to Mordor
-    const $mR = document.getElementById('Mordor')
+    // const $mR = document.getElementById('Mordor')
     const $mD = $('<div>').attr('id', 'mount-doom')
-    $($mR).append($mD)
+    $($gM).append($mD)
     
 };
 
@@ -285,11 +285,16 @@ const itsDangerousToGoAlone = () => {
 const weWantsIt = () => {
 
   // 1. Create a div with an id of 'gollum' and add it to Mordor
-
+    const $G = $('<div>').attr('id', 'gollum')
+    const $m = document.getElementById('Mordor')
+    $($m).append($G)
   // 2. Move the ring from Frodo and give it to Gollum
-
+  const $gR = document.getElementById('the-ring')
+  const $g = document.getElementById('gollum')
+  $($g).append($gR)
   // 3. Move Gollum into Mount Doom
-
+    const $mD = document.getElementById('mount-doom')
+    $($mD).append($g)
 };
 
 // COMMIT YOUR WORK
