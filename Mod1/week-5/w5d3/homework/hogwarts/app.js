@@ -6,7 +6,21 @@
                     // } else {console.log('I did it! I linked jQuery and this js file!')};
 
 
+$(() => {
+    const $container = $('div')
+    const $h1 = $('<h1>').text('Hogwarts')
+    
+    $container.append($h1)
 
+
+
+
+
+
+
+
+
+});
                     
         
 
