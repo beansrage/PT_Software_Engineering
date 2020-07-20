@@ -26,11 +26,61 @@ $(() => {
     const $tT= $('<li>').text('Time Turner').attr('class', 'secret')
     let $l6 = document.createElement('li')
     let $l6T ='Bertie Bott\'s Every Flavor [Jelly] Beans.'
+            //Y4\\
+    const $h5 = $('<h5>').text('Spring 2017')
+    const $tB = $('<table>')
+    const $tE = $('<th>').text('Day')
+    const $tC = $('<th>').text('Classes')
+    const $tR = $('<tr>')
+
+    const $tR1 = $('<tr>') //Monday
+        const $tD11 = $('<td>').text('Monday: ')
+        const $tD12 = $('<td>').text('Herbology')
+
+    const $tR2 = $('<tr>') //Tuesday
+        const $tD21 = $('<td>').text('Tuesday: ')
+        const $tD22 = $('<td>').text('Charms')    
+
+    const $tR3 = $('<tr>') //Wensday
+        const $tD31 = $('<td>').text('Wensday: ')
+        const $tD32 = $('<td>').text('Transfiguration')
+
+    const $tR4 = $('<tr>') //Thursday
+        const $tD41 = $('<td>').text('Thursday: ')
+        const $tD42 = $('<td>').text('Potions')
+
+    const $tR5 = $('<tr>') //Friday
+        const $tD51 = $('<td>').text('Friday: ')
+        const $tD52 = $('<td>').text('Dark Arts')
 
         //Appenditures\\
     $container.append($h1,$h2,$h3,$h4,$h42,$ul)
     $($ul).append($bB, $iC, $mM, $tT, $l,$l6)
     $($l6).append($l6T)
+    $container.append($h5, $tB)
+        //append to table Y4\\
+    $tB.append($tR,$tR1,$tR2,$tR3,$tR4,$tR5)
+        //append to tr Y4\\
+    $tR.append($tE, $tC)
+    $tR1.append($tD11,$tD12)
+    $tR2.append($tD21,$tD22)
+    $tR3.append($tD31,$tD32)
+    $tR4.append($tD41,$tD42)
+    $tR5.append($tD51,$tD52)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
