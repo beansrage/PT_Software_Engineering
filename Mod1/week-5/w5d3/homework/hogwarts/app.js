@@ -7,13 +7,30 @@
 
 
 $(() => {
+            //Y1\\
     const $container = $('div')
     const $h1 = $('<h1>').text('Hogwarts')
-    
-    $container.append($h1)
+    // $container.append($h1)
+            //Y2\\
+    const $h2 = $('<h2>').text('Beans')
+    const $h3 = $('<h3>').text('Slytherin')
+    const $h4 = $('<h4>').text('Zele')
+    $h4.attr('class', 'Wolf')
+    const $h42 = $('<h4>').text('Hawthorn Wand with Dragon Heartstring Core')
+            //Y3\\
+    const $ul = $('<ul>').attr('Storage', 'Trunk')
+    const $bB = $('<li>').text('Butterbeer')
+    const $iC = $('<li>').text('Invisibilty Cloak').attr('class', 'secret')
+    const $mM= $('<li>').text('Magic Map').attr('class', 'secret')
+    const $l= $('<li>').text('Leash').attr('class', 'Wolf')
+    const $tT= $('<li>').text('Time Turner').attr('class', 'secret')
+    let $l6 = document.createElement('li')
+    let $l6T ='Bertie Bott\'s Every Flavor [Jelly] Beans.'
 
-
-
+        //Appenditures\\
+    $container.append($h1,$h2,$h3,$h4,$h42,$ul)
+    $($ul).append($bB, $iC, $mM, $tT, $l,$l6)
+    $($l6).append($l6T)
 
 
 

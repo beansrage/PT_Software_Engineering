@@ -8,3 +8,34 @@ color: purple;
 text-align: center;
 font-family: cursive;
 }
+h2 {
+    color: purple;
+    text-align: center;
+    font-family: cursive;
+}
+h3 {
+    color: purple;
+    text-align: center;
+    font-family: cursive;
+}
+h3 {
+    color: purple;
+    text-align: center;
+    font-family: cursive;
+}
+h4 {
+    color: purple;
+    text-align: center;
+    font-family: cursive;
+}
+
+li {
+    color: purple;
+    list-style-type: none;
+    text-align: center;
+    
+}
+.secret{
+    opacity: .5;
+    
+}
