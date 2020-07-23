@@ -32,5 +32,8 @@ $(() => {
 
 
             //Y6\\
-    
+    $('li.secret').delay(2000).hide('slow')
+    $('li.secret').delay(2000).show('slow')
+    $('li.wolf').addClass('cabbage')
+    $('li.wolf').removeClass('cabbage')
 });
