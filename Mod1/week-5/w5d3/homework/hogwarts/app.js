@@ -36,4 +36,9 @@ $(() => {
     $('li.secret').delay(2000).show('slow')
     $('li.wolf').addClass('cabbage')
     $('li.wolf').removeClass('cabbage')
+
+            //Y6\\
+    $('h5').text('Fall 2018')
+    $('ul').prepend('<li value="trunk">Butter Beer</li>')
+    $('ul').attr('storage', 'chest')
 });
