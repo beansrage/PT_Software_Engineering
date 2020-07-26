@@ -43,17 +43,85 @@ function powerButton() {
 }
 
 powerButton();
+
+
+
 vM={
-    snacks: [Bar = {name: 'MarZ', price: 2.93},chips = {name: 'tortas', price: 1.30},drink = {name: 'SiiiP', price: 0.75}]
+    snacks: [Bar = {name: 'MarZ', price: 2.93},chips = {name: 'tortas', price: 1.30},drink = {name: 'SiiiP', price: 0.75}], 
+    vend (input) {
+        console.log('vending', vM.snacks[input]);
+      }
 }
-// a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
-function vend(a) {
-    for (let i =0; i < 3; i++) {
-        console.log(vM.snacks[i]);
-        
+vM.vend(1);
+
+
+
+
+
+
+///////////////////Callbacks
+
+function add(x, y) {
+    x=1; 
+    y=2
+    return (console.log(x+y))
+}
+add();
+
+function subtract(x, y) {
+    x=4;
+    y=2
+    return (console.log(x-y))
+}
+subtract();
+
+function multiply(x, y) {
+    x=4;
+    y=2
+    return (console.log(x*y))
+}
+multiply()
+
+function divide (x, y) {
+    x=4;
+    y=2
+    return (console.log(x / y))
+}
+divide()
+console.log('')
+
+function calculate (n1,n2,operate) {
+    function operate() {
+        n1
+        n2
+        this.number = n1*n2
+        return console.log(this.number)
+    }
+    operate()
+}
+calculate(1,5)
+calculate(12,37)
+calculate(89,14)
+calculate(6,0)
+
+
+const bar = () => {
+    console.log('bar here');
+}
+bar();
+
+const foo = () => {
+    console.log('foo here');
+}
+foo();
+
+
+// foo();
+
+// const foo ()=>{
+//     console.log('hi');
+// }
+// function foo has already been defined, which means theres already a function with the name foo
+
+
  
-
-}
-}
-vend();
-
