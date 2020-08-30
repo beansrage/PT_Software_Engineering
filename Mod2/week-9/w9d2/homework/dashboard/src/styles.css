@@ -21,13 +21,14 @@ div.card-header {
  
  html, body {
    background-color: rgba(255, 255, 255, 0.509);
-   /* background-image: url(./assets/images/background.jpg); */
+   background-image: url(assets/images/622.jpg);
    background-position: center;
+   background-size: 170%;
    
    
  } 
  .card {
-   background-color: rgba(0, 0, 0, 0.351);
+   background-color: rgba(0, 0, 0, 0.678);
    color: rgb(255, 255, 255);
  }
  
@@ -36,54 +37,10 @@ div.card-header {
    color: cornsilk;
  }
  
- .nav-link {
-   color: rgb(149, 149, 149);
-   /* color of Home, Productlist, Contact */
- }
  
- .nav-link:hover {
-   /* hover over color  */
-   color: rgb(211, 146, 6);
-   
- }
- 
- nav {
-   /* background color of nav */
-   background-color: rgba(255, 255, 0, 0.123);
- }
- 
- .navbar-brand {
-   color: rgb(211, 146, 6);
- }
- 
- .btn-primary{
-   border: 0px;
-   background-color: rgb(255, 123, 0);
-   
- }
- 
- .btn-primary:hover {
-   color: rgb(90, 18, 18);
-   background-color: rgba(255, 123, 0, 0.787);
-   
-   
- }
- 
- .btn :focus{
-   background-color: teal;
- }
- 
- a {
-   
-   color: yellow;
- }
- 
- a:hover{
-   color: blanchedalmond;
- }
 
 
  .text-center {
-   margin-top: 275px;
-   margin-left: 1150px;
+   margin-top: 600px;
+   margin-left: 1100px;
  }
