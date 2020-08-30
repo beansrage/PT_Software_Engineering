@@ -6,6 +6,7 @@ import { SidebarComponent } from './sidebar/sidebar/sidebar.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { RatingComponent } from './rating/rating.component';
 import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analysis.component';
+import { WebsiteVisitorsComponent } from './website-visitors/website-visitors.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analy
     SidebarComponent,
     ReviewsComponent,
     RatingComponent,
-    SentimentAnalysisComponent
+    SentimentAnalysisComponent,
+    WebsiteVisitorsComponent
   ],
   imports: [
     BrowserModule
