@@ -53,19 +53,42 @@
       /* background-color: #ea4335;
       width: 600px;
   } */
-/* 
+
   .clients{
-    
-    background-color: #75bd3f;
-    width: 600px;
-}
-
-.sup {
-    background-color: #0092ff;
-    width: 600px;
-}
-
-.contact {
-    background-color: #7d4297;
+    margin: 0px;
+    background-color:  #75bd3f;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+  }
+    /* background-color: #75bd3f;
     width: 600px;
 } */
+
+.sup {
+  margin: 0px;
+    background-color:  #0092ff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+  }
+    /* background-color: #0092ff;
+    width: 600px;
+} */
+
+.contact {
+  margin: 0px;
+    background-color:  #7d4297;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+  }
+    /* background-color: #7d4297;
+    width: 600px;
+}  */
