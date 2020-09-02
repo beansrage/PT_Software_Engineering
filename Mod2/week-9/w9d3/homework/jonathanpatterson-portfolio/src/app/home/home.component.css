@@ -1,0 +1,33 @@
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 40px
+}
+
+h4 {
+    color: aliceblue;
+    font-weight: bold;
+    margin-left: -470px;
+    margin-top: 100px;
+    font-size: large;
+}
+
+.square-line {
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: -15px;
+    font-size: x-small;
+}
+
+p.per {
+    color: aliceblue;
+    font-size: medium;
+    margin-left: -210px;
+    margin-top: auto;
+}
+img {
+    height:3rem;
+    font-size: 1.75em;
+    margin-left: -520px;
+    margin-top: 35px;
+}
