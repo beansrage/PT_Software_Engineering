@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ClientsComponent } from './clients/clients.component';
+import { SupComponent } from './sup/sup.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ClientsComponent } from './clients/clients.component';
     HomeComponent,
     AboutComponent,
     PortfolioComponent,
-    ClientsComponent
+    ClientsComponent,
+    SupComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,36 @@
+/* Welcome text */
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 40px
+}
+/* 'Sup text */
+h4 {
+    color: aliceblue;
+    font-weight: bold;
+    margin-left: -485px;
+    margin-top: 25px;
+    font-size: large;
+}
+/* square + line  */
+.square-line {
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: -125px;
+    font-size: x-small;
+}
+/* under the line text*/
+p.per {
+    color: aliceblue;
+    font-size: medium;
+    margin-left: -240px;
+    margin-top: auto;
+}
+/* img*/
+img {
+    align-items: center;
+    height:16rem;
+    font-size: 1.75em;
+    margin-left: -5px;
+    margin-top: 70px;
+}
