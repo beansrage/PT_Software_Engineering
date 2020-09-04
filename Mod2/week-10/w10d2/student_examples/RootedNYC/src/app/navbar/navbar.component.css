@@ -1,6 +1,9 @@
 .nav-bar {
     background-color: #cf0;
-    height: 75px}
+    height: 75px;
+      
+}
+
 
 .topnav {
     
@@ -20,7 +23,9 @@
     margin-left: 20px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
   }
+
   
   .topnav a:hover {
     border-bottom: 2px solid black;
