@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 
 
 import { AnnouncementsBarComponent } from './announcements-bar/announcements-bar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnnouncementsBarComponent
+    AnnouncementsBarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule

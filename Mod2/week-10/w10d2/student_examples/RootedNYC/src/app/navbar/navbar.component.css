@@ -1,0 +1,38 @@
+.nav-bar {
+    background-color: #cf0;
+    height: 75px}
+
+.topnav {
+    
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 15px;
+    text-decoration: none;
+    font-size: small;
+    border-bottom: 3px solid transparent;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 2px solid black;
+  }
+  
+  .rooted {
+      margin-left: 854px;
+      margin-top: -65px;
+  }
+
+  .search {
+    float: right;
+    margin-right: 50px;
+    
+  }
